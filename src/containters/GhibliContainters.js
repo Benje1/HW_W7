@@ -45,7 +45,7 @@ const GhibliContainer = () => {
     <h1>Studio Ghibli FIlms, read the descriotion and add to your favorites or watchList! See your list at the end!</h1>
     <GhibliList films={films} addToFavorites={addToFavorites} addToWatchList={addToWatchList}/>
     {favorites ?<Favourites favorites={favorites}/> : null}
-    {watchList ?<WatchList watchList={watchList} removeFromWatchList={removeFromWatchList}/> : null}
+    {watchList ?<WatchList watchList={watchList} removeFromWatchList={removeFromWatchList} addToFavorites={addToFavorites}/> : null}
     </>)
 
 }

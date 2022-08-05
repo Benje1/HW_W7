@@ -1,11 +1,11 @@
 import React from "react";
 import WatchListItem from "./watchlistItem";
 
-const WatchList = ({watchList, removeFromWatchList}) => {
+const WatchList = ({watchList, removeFromWatchList, addToFavorites}) => {
 
 
     const watchlistItems = watchList.map((film, index) => {
-        return <WatchListItem film={film} key={index} removeFromWatchList={removeFromWatchList}/>
+        return <WatchListItem film={film} key={index} removeFromWatchList={removeFromWatchList} addToFavorites={addToFavorites}/>
     })
 
     return(<>
